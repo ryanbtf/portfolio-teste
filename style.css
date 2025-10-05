@@ -37,14 +37,16 @@ header > nav > a:hover {
 
 .sitemain > div {
     margin-right: 100px;
-    background-color: rgba(0, 0, 0, 0.103);
     max-width: 600px;
     max-height: 320px;
     padding: 70px 70px 70px 40px;
+    transition: 0.2s ease;
 }
 
 .sitemain > div:hover {
     background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 20px;
+    transition: 0.2s ease;
 }
 
 .sitemain > div > h1 {
@@ -68,15 +70,91 @@ header > nav > a:hover {
 
 .box {
     min-width: 400px;
+    max-width: 400px;
     min-height: 700px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 58, 0.329);
-    margin: 60px;
+    background-color: rgba(0, 0, 70, 0.329);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.164);
+    margin: 30px;
     color: white;
     display: inline-block;
+    vertical-align: top;
+    font-family: sans-serif;
+    transition: 0.1s ease;
+}
+
+.box > h1 {
+    text-align: center;
+    margin: 20px;
+    font-size: 2.5em;
+}
+
+.box > p {
+    margin: 20px;
+    font-size: 1.3em;
 }
 
 .box:hover {
     background-color: rgba(0, 0, 92, 0.329);
+    transform: scale(0.99);
     transition: 0.3s ease;
+}
+
+.box > .button {
+    text-align: auto;
+    align-items: center;
+}
+
+.button {
+    display: grid;
+    color: rgba(255, 255, 255, 0.685);
+    margin: 10px;
+    background-color: blue;
+    border: 0px black solid;
+    border-radius: 5px;
+    padding: auto;
+    font-size: 1.4em;
+    min-height: 50px;
+    min-width: 380px;
+    max-width: 380px;
+    transition: 0.2s ease;
+}
+
+.button:active {
+    transform: scale(0.97);
+    transition: 0.1s ease;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 179);
+    color: white;
+}
+
+.button > a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.685);
+}
+
+.image {
+    background-color: darkblue;
+    border-radius: 10px 10px 0px 0px;
+    height: 310px;
+    width: auto;
+}
+
+#butaodiv1 {
+    margin-top: 130px;
+}
+
+#butaodiv2 {
+    margin-top: 108px;
+}
+
+#butaodiv3 {
+    margin-top: 130px;
+}
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 2s;
 }
