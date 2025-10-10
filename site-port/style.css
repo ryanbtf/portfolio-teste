@@ -308,6 +308,7 @@ abbr {
     border-radius: 20px;
     
     transition: 0.2s ease;
+    transform: scale(0.98);
 }
 
 .artigo > h1 {
